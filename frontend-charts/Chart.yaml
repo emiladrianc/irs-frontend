@@ -13,5 +13,5 @@ dependencies:
   - name: irs-frontend-service
     alias: irs-frontend-service
     version: 0.0.1
-    repository: https://emiladrianc.github.io/irs-frontend
+    repository: https://emiladrianc.github.io/irs-frontend/
     condition: install.irs.frontend
