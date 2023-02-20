@@ -8,10 +8,9 @@ metadata:
     {{- include "irs-frontend-service.labels" . | nindent 4 }}
 data:
   config.env: |-
+    VITE_SERVER_DEFAULT_ENV = LOCAL
 
     VITE_USER_MANUAL_URL = {{ .Values.registry.vite.manual.url }}
-
-    VITE_SERVER_DEFAULT_ENV = LOCAL
 
     VITE_SERVER_LOCAL_LABEL = Local Data
     VITE_SERVER_LOCAL_BASE_URL = {{ .Values.registry.url.local }}
